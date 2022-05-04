@@ -46,7 +46,8 @@ RUN tar zxvf delve-0.95.tgz
 COPY Makefile /delve/src/
 WORKDIR "/delve"
 RUN make
- 
+WORKDIR "/"
+
 # rRNAdust
 RUN wget https://fantom.gsc.riken.jp/5/suppl/rRNAdust/rRNAdust1.06.tgz
 RUN tar zxvf rRNAdust1.06.tgz
