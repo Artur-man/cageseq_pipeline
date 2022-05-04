@@ -9,3 +9,4 @@ dependencies:
   - samtools=1.3
   - ucsc-wigToBigWig=377
   - bedtools=2.29.2
+  - star=2.6.1d # don't upgrade me - 2.7X indices incompatible with iGenomes.
