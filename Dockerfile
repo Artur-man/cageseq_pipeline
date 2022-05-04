@@ -51,4 +51,4 @@ RUN make
 RUN wget https://fantom.gsc.riken.jp/5/suppl/rRNAdust/rRNAdust1.06.tgz
 RUN tar zxvf rRNAdust1.06.tgz
 WORKDIR "/rRNAfilter"
-RUN make
+# RUN make
