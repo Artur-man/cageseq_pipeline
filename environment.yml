@@ -11,3 +11,5 @@ dependencies:
   - bedtools=2.29.2
   - star=2.6.1d # don't upgrade me - 2.7X indices incompatible with iGenomes.
   - macs2=2.1.2
+  - bowtie2=2.3.5
+  - bowtie=1.2.2
