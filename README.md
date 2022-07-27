@@ -1,4 +1,4 @@
-# cageseq_pipeline
+# CAGE-Seq Pipeline
 
 This CAGE-seq pipeline includes rRNA filtering, Genome Alignment using STAR, and peak calling using MACS2. 
 
