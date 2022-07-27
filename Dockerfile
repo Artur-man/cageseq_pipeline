@@ -39,18 +39,3 @@ RUN conda env create -f /environment.yml && conda clean -a
 RUN git clone https://github.com/dolphinnext/tools /usr/local/bin/dolphin-tools
 RUN mkdir -p /project /nl /mnt /share
 ENV PATH /opt/conda/envs/dolphinnext-cageseq-1.0/bin:/usr/local/bin/dolphin-tools/:$PATH
-
-# delve mapper
-RUN wget https://fantom.gsc.riken.jp/5/suppl/delve/delve-0.95.tgz
-RUN tar zxvf delve-0.95.tgz
-COPY Makefile /delve/src/
-WORKDIR "/delve"
-RUN make
-WORKDIR "/"
-
-# rRNAdust
-RUN wget https://fantom.gsc.riken.jp/5/suppl/rRNAdust/rRNAdust1.06.tgz
-RUN tar zxvf rRNAdust1.06.tgz
-WORKDIR "/rRNAfilter"
-RUN make
-WORKDIR "/"
