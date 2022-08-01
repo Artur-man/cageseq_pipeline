@@ -1,0 +1,5 @@
+install.packages("BiocManager", repos='http://cran.us.r-project.org')
+library(BiocManager)
+install('GenomicAlignments', ask = FALSE)
+install('GenomicFeatures', ask = FALSE)
+install('ChIPseeker', ask = FALSE)
